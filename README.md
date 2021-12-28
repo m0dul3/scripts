@@ -1,23 +1,12 @@
-# modules - scripts
+~module
 
-gcc <name.c> -o -pthread <name> 
+NOTE: All scripts are for network stress testing only, users are legally responsible for the illegal usage of these tools.
 
-example: 
+All scripts requires IP Spoofing.
 
-gcc dns.c -o -pthread dns
- 
- chmod 777 *
-  
- ./dns        < will list the commands neede for input
-                    
-   
-ZIP INCLUSIONS:
+List of available scripts:
 
-Exploits
-MIRAI AND SCANNERS
-Layer4 Methods
-Layer7 Methods
-UDP METHODS
-TCP METHODS
-BRUTERS
-VULN LISTS
+- Massacre: A random IP protocol flooder. It just randomize packets, sources and protocols.
+- EvilESP1-1: The first stable version of EvilESP, an ESP protocol flooder. 
+- EvilESP3: The latest EvilESP version. Now including both ESP and ISAKMP packets (each IP send both 1 ISAKMP and ESP packet). Sending also random cookie, msgid and packet data stream.
+- CFuck 1.2: How many networks, companies and hostings whitelist entire Cloudflare subnets in order to avoid their Firewall and Anti-DDOS appliances to drop legit Cloudflare packets when protecting a site with it? Our script spoofs valid SYN packets from 10k Cloudflare IPs.
